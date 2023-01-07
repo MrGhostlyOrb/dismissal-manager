@@ -1,0 +1,14 @@
+{% extends "head.html" %}
+{% block content %}
+
+<form  action="/add_teacher" method="post">
+     <label> Username:
+        <input type="text" name="username" placeholder="Username" />
+    </label>
+    <label> Password:
+        <input type="password" name="password" placeholder="Password" />
+    </label>
+    <input type="submit" value="Add" />
+</form>
+
+    {% endblock %}

@@ -1,0 +1,19 @@
+{% extends "head.html" %}
+{% block content %}
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Student ID</th>
+            <th>Call Status</th>
+            <th>Update Call Status</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.id }}</td>
+            <td>{{ student.call_status }}</td>
+            <td><a href="/update_call_status/{{ student.id }}">Update Call Status</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

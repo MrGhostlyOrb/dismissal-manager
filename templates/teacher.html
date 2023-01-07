@@ -1,0 +1,49 @@
+{% extends "head.html" %}
+{% block content %}
+    <script>
+        setTimeout(function(){location.reload()},10000);
+    </script>
+    <h1>{{ selected_class }}</h1>
+        <form action="/class_select" method="get">
+            <label> Select Class:
+                <select name="class">
+                    <option value="all">All</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </label>
+            <input type="submit" value="Filter">
+        </form>
+
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Class</th>
+                <th>Call Status</th>
+            </tr>
+            {% for student in students %}
+{#                if  student.call_status is  1 make it red#}
+                {% if student.call_status == "1" %}
+                    <tr style="background-color: red">
+                {% else %}
+                    <tr>
+                {% endif %}
+                    <td>{{ student.first_name }}</td>
+                    <td>{{ student.last_name }}</td>
+                    <td>{{ student.class }}</td>
+                    <td>{{ student.call_status }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+{% endblock %}

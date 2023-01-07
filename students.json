@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "first_name": "John",
+        "last_name": "Doe",
+        "class": "1",
+        "number_plate": "1234",
+        "call_status": "0"
+    },
+    {
+        "id": "2",
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "class": "2",
+        "number_plate": "5678",
+        "call_status": "0"
+    },
+    {
+        "id": "3",
+        "first_name": "John",
+        "last_name": "Smith",
+        "class": "2",
+        "number_plate": "9012",
+        "call_status": "0"
+    },
+    {
+        "id": "4",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "class": "2",
+        "number_plate": "3456",
+        "call_status": "1"
+    },
+    {
+        "id": "5",
+        "first_name": "Oceana",
+        "last_name": "Doe",
+        "class": "1",
+        "number_plate": "7890",
+        "call_status": "1"
+    },
+    {
+        "id": "6",
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "class": "2",
+        "number_plate": "1234",
+        "call_status": "1"
+    },
+    {
+        "id": "7",
+        "first_name": "John",
+        "last_name": "Smith",
+        "class": "2",
+        "number_plate": "5678",
+        "call_status": "1"
+    },
+    {
+        "id": "8",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "class": "2",
+        "number_plate": "9012",
+        "call_status": "1"
+    },
+    {
+        "id": "9",
+        "first_name": "John",
+        "last_name": "Doe",
+        "class": "1",
+        "number_plate": "3456",
+        "call_status": "1"
+    },
+    {
+        "id": "10",
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "class": "2",
+        "number_plate": "7890",
+        "call_status": "1"
+    }
+]

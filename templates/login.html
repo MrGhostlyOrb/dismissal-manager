@@ -1,0 +1,12 @@
+{% extends "head.html" %}
+{% block content %}
+<form action="/login" name="login" method="post">
+    <label> Username:
+        <input type="text" name="username" placeholder="Username" />
+    </label>
+    <label> Password:
+        <input type="password" name="password" placeholder="Password" />
+    </label>
+    <input type="submit" value="Login" />
+</form>
+{% endblock %}

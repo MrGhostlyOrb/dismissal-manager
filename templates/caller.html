@@ -1,0 +1,36 @@
+{% extends "head.html" %}
+{% block content %}
+
+    <form action="/search" method="post">
+        <label> Search for a student:
+            <input type="text" name="search" placeholder="Search for student name">
+        </label>
+        <input type="submit" name="submit" value="Search">
+    </form>
+
+    {% if search_results %}
+    <table>
+    <tr>
+    <th>Student First Name</th>
+    <th>Student Last Name</th>
+    <th>Student ID</th>
+    <th>Student Class</th>
+        <th>Student Number Plate</th>
+    <th>Call Status</th>
+    <th>Update Call Status</th>
+    </tr>
+    {% for student in search_results %}
+    <tr>
+    <td>{{ student.first_name }}</td>
+    <td>{{ student.last_name }}</td>
+    <td>{{ student.id }}</td>
+    <td>{{ student.class }}</td>
+        <td>{{ student.number_plate }}</td>
+    <td>{{ student.call_status }}</td>
+    <td><a href="/update_call_status/{{ student.id }}">Update</a></td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% endif %}
+
+{% endblock %}
