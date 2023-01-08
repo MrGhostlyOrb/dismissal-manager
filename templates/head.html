@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Dismissal Manager</title>
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="https://unpkg.com/{{ design }}.css" />
+    <link rel="stylesheet" href="../static/style.css" />
 </head>
 <body>
-<a href="/menu">Return to Menu</a>
+<div class="title-bar">
+  <div class="title-bar-text">Dismissal Manager</div>
+  <div class="title-bar-controls">
+    <button aria-label="Close" onclick="location.href='/logout'"></button>
+  </div>
+</div>
+<div class="window-body">
+<button onclick="location.href='/menu'">Return to Menu</button>
 {% block content %}{% endblock %}
+</div>
 </body>
 </html>

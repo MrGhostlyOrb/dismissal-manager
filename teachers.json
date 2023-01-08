@@ -1,14 +1,31 @@
 [
     {
         "username": "admin",
-        "password": "admin"
+        "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+        "roles": [
+            "admin"
+        ]
     },
     {
-        "username": "Teacher1",
-        "password": "password"
+        "username": "caller",
+        "password": "61de55ba3388aec4fdf6ecfc6eef846fb0f1b13e28cc8381270c27ffa313aee5",
+        "roles": [
+            "caller"
+        ]
     },
     {
-        "username": "teacher1",
-        "password": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+        "username": "teacher",
+        "password": "1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755",
+        "roles": [
+            "teacher"
+        ]
+    },
+    {
+        "username": "tc",
+        "password": "8f455bba4522752c63bbcd2b6d4c954e66a2bade8792dbe67be7c088affa422e",
+        "roles": [
+            "teacher",
+            "caller"
+        ]
     }
 ]

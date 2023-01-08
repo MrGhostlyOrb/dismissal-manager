@@ -2,18 +2,22 @@
 {% block content %}
     <table>
         <tr>
-            <th>Student Name</th>
+            <th>Student First Name</th>
+            <th>Student Last Name</th>
             <th>Student ID</th>
             <th>Call Status</th>
             <th>Update Call Status</th>
         </tr>
         {% for student in students %}
         <tr>
-            <td>{{ student.name }}</td>
+            <td>{{ student.first_name }}</td>
+            <td>{{ student.last_name }}</td>
             <td>{{ student.id }}</td>
             <td>{{ student.call_status }}</td>
             <td><a href="/update_call_status/{{ student.id }}">Update Call Status</a></td>
         </tr>
         {% endfor %}
     </table>
+    <a href="/reset_call_status">Reset Call Status</a>
+    <a href="/add_teacher">Add Teacher</a>
 {% endblock %}
